@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>School timetable</title>
+    
+  </head>
+  <body>
+    <h1>School timetable</h1>
+<div class ='table_1'>
+    <app-calendar></app-calendar>
+  </div>
+    
+      <div class ="table_2">
+        
+    <table>
+      
+      <tr>
+        
+        <th>Гитарист
+          
+        </th> 
+        
+        
+        <th>Басист</th>
+        <th>Барабанщик</th>
+        <th>Пианист</th>
+        <th>Трубач</th>
+        <th>Сексофонист</th>
+        <th>Ананист   </th>
+      </tr>
+      <tr *ngFor="let item of range(nowDay,daysInMonth+1)">
+      <td id="item"[ngClass]="{'change-color': list.includes(item) && false}"><dialog-elements>  
+      </dialog-elements></td>
+      <td id="item"[ngClass]="{'change-color': list.includes(item)}"><dialog-elements>  
+      </dialog-elements></td>
+      <td id="item"[ngClass]="{'change-color': list.includes(item)}"><dialog-elements>  
+      </dialog-elements></td>
+      <td id="item"[ngClass]="{'change-color': list.includes(item)}"><dialog-elements>  
+      </dialog-elements></td>
+      <td id="item"[ngClass]="{'change-color': list.includes(item)}"><dialog-elements>  
+      </dialog-elements></td>
+      <td id="item"[ngClass]="{'change-color': list.includes(item)}"><dialog-elements>  
+      </dialog-elements></td>
+      <td id="item"[ngClass]="{'change-color': list.includes(item)}"><dialog-elements>  
+      </dialog-elements></td>
+    
+    
+    
+    
+    </tr>
+      
+      
+      
+      
+        
+    </table>
+  </div>
+      
+    
+     
+      
+
+  </body>
+
+  
+
+</html>
